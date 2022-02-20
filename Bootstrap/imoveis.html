@@ -13,9 +13,10 @@
   <body>
     <h1>CADASTRE O SEU IMÓVEL - GRID BOOTSTRAP</h1>
 
-    <h2>Fica de cadastro de imóveis</h2>
+    <h2>Fica de cadastro de imóveis - Complexo Imóveis LTDA</h2>
 <div class= "container">
-    
+  
+      <h2>Dados do contratante:</h2>
         <!-- Primeira linha-->
         <div class="form-row">
 
@@ -32,9 +33,6 @@
 
         <!-- Segunda linha-->
         <div class="form-row">
-          <div class="form-group col-md-2 ">
-            <label>Dados do contratante: </label>
-          </div>
           <div class="form-group col-md-2">
             <input type="checkbox" id="dados" value="proprietario"> Proprietário
           </div>
@@ -45,11 +43,9 @@
           
         </div>
 
+        <h2>Dados do imóvel:</h2>
         <!-- Terceira linha-->
         <div class="form-row">
-          <div class="form-group col-md-2">
-            <label>Dados do imóvel: </label>
-          </div>
           <div class="form-group col-md-1">
             <input type="checkbox" id="imovel" value="apto"> Apto
           </div>
@@ -61,7 +57,7 @@
             <input type="checkbox" id="imovel" value="casa"> Casa
           </div>
 
-          <div class="form-group col-md-1">
+          <div class="form-group col-md-2">
             <input type="checkbox" id="imovel" value="comercial"> Comercial
           </div>
           <div class="form-group col-md-1 ">
@@ -95,11 +91,13 @@
           </div>
         </div>
         
+        <h2>Transação:</h2>
         <!-- Quarta linha-->
         <div class="form-row">
-          <div class="form-group col-md-3">
-            <label> Transação: </label>
+          <div class="form-group col-md-1">
             <input type="checkbox" id="transacao" value="venda"> Venda
+          </div>
+          <div class="form-group col-md-1">
             <input type="checkbox" id="transacao" value="locacao"> Locação
           </div>
           <div class="form-group col-md-2">
@@ -112,29 +110,229 @@
           </div>
         </div>
 
+        <h2>Terreno (m):</h2>
         <!-- Quinta linha-->
         <div class="form-row">
-          <div class="form-group col-md-2">
-            <label> Tamanho Frente (m): </label>
-            <input type="text" class="form-control" id="valor-venda">
+
+          <div class="form-group col-md-1">
+            <label> Frente (m): </label>
+            <input type="text" class="form-control" id="tamanho-frente">
           </div>
+
+          <div class="form-group col-md-1">
+            <label> Fundos (m): </label>
+            <input type="text" class="form-control" id="tamanho-fundos">
+          </div>
+          
+          <div class="form-group col-md-1">
+            <label> Útil (m²): </label>
+            <input type="text" class="form-control" id="area-util">
+          </div>
+
           <div class="form-group col-md-2">
-            <label> Tamanho Fundos (m): </label>
-            <input type="text" class="form-control" id="valor-venda">
+            <label> Construída (m²): </label>
+            <input type="text" class="form-control" id="area-construida">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label> Total (m²): </label>
+            <input type="text" class="form-control" id="area-total">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label>Posição</label>
+            <select class="form-control" id="subtipo">
+              <option>Frente</option>
+              <option>Lateral</option>
+              <option>Fundos</option>
+            </select>
           </div>
         </div>
 
+        <h2>Infraestrutura</h2>
         <!-- Sexta linha-->
         <div class="form-row">
 
+          <div class="form-group col-md-2">
+            <label>Ano Construção</label>
+            <input type="text" class="form-control" id="ano-construcao">
+          </div>
+          <div class="form-group col-md-1">
+            <label>Andares</label>
+            <input type="text" class="form-control" id="andares">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label>Apartamentos por andar</label>
+            <input type="text" class="form-control" id="apto-andar">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Elevadores</label>
+            <input type="text" class="form-control" id="qtde-elevadores">
+          </div>
         </div>
 
+        <h2>Localização</h2>
+        <!-- Sétima linha-->
+        <div class="form-row">
+          <div class="form-group col-md-1">
+            <label>CEP: </label>
+            <input type="text" class="form-control" id="cep">
+          </div>
+          
+          <div class="form-group col-md-4">
+            <label>Logradouro: </label>
+            <input type="text" class="form-control" id="logradouro">
+          </div>
 
+          <div class="form-group col-md-2">
+            <label>Bairro: </label>
+            <input type="text" class="form-control" id="logradouro">
+          </div>
 
+          <div class="form-group col-md-1">
+            <label>N°: </label>
+            <input type="text" class="form-control" id="numero">
+          </div>
 
+          <div class="form-group col-md-2">
+            <label>Complemento: </label>
+            <input type="text" class="form-control" id="complemento">
+          </div>
 
+          <div class="form-group col-md-1">
+            <label>Andar: </label>
+            <input type="text" class="form-control" id="andar">
+          </div>
 
+        </div>
 
+        <!-- Oitava linha-->
+        <div class="form-row">
+          <div class="form-group col-md-1">
+            <label> Estado </label>
+                        <select class="form-control" id="estado">
+                            <option>Acre</option>
+                            <option>Alagoas</option>
+                            <option>Amapá</option>
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Distrito Federal</option>
+                            <option>Espírito Santo</option>
+                            <option>Goiás</option>
+                            <option>Maranhão</option>
+                            <option>Mato Grosso</option>
+                            <option>Mato Grosso do Sul</option>
+                            <option>Minas Gerais</option>
+                            <option>Pará</option>
+                            <option>Paraíba</option>
+                            <option>Paraná</option>
+                            <option>Pernambuco</option>
+                            <option>Piauí</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Rio Grande do Sul</option>
+                            <option>Rondônia</option>
+                            <option>Roraima</option>
+                            <option>Santa Catarina</option>
+                            <option>São Paulo</option>
+                            <option>Sergipe</option>
+                            <option>Tocantins</option>
+                        </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label>Cidade</label>
+            <input type="text" class="form-control" id="cidade">
+          </div>
+        </div>
+
+        <h2>Mais informações</h2>
+        <!-- Nona linha-->
+        <div class="form-row">
+          <div class="form-group col-md-1">
+            <label>Salas</label>
+            <input type="text" class="form-control" id="sala">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Quartos</label>
+            <input type="text" class="form-control" id="quartos">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Suítes</label>
+            <input type="text" class="form-control" id="suites">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label>Varanda/Terraço</label>
+            <input type="text" class="form-control" id="area-externa">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Cozinhas</label>
+            <input type="text" class="form-control" id="cozinha">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Lavanderias</label>
+            <input type="text" class="form-control" id="lavanderias">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Quintal</label>
+            <input type="text" class="form-control" id="quintal">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Despensas</label>
+            <input type="text" class="form-control" id="despensa">
+          </div>
+
+          <div class="form-group col-md-1">
+            <label>Banheiros</label>
+            <input type="text" class="form-control" id="banheiros">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label>Ocupado</label>
+            <input type="checkbox" id="ocupado" value="sim"> Sim
+            <input type="checkbox" id="ocupado" value="não"> Não
+          </div>
+        </div>
+
+        <h2>Divulgação</h2>
+        <!-- Décima linha-->
+        <div class="form-row">
+            <div class="form-group col-md-5">
+              <label>Aceita placa</label>
+              <input type="checkbox" id="ocupado" value="sim"> Sim
+              <input type="checkbox" id="ocupado" value="não"> Não,
+              <label>por quê?</label>
+              <input type="text" class="form-control" id="motivo-placa">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label>Canais midiáticos</label>
+              <input type="text" class="form-control" id="canal">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label>Região</label>
+              <input type="text" class="form-control" id="canal">
+            </div>
+        </div>
+
+        <!-- Décima Primeira linha-->
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label>Público</label>
+            <input type="text" class="form-control" id="canal">
+          </div>
+        </div>
+
+        
 </div>
         
 
